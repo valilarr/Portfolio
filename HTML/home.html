@@ -103,9 +103,9 @@
 <h2>The input Element</h2>
 
 <form action="/action_page.php">
-  <label for="fname">First name 2:</label><br />
+  <label for="fname">First name:</label><br />
   <input type="text" id="fname" name="fname" /><br /><br />
-   <label for="lname">Last name 2:</label><br />
+   <label for="lname">Last name:</label><br />
   <input type="text" id="lname" name="lname" /><br /><br />
   <input type="submit" value="Submit" />
 </form>
@@ -115,7 +115,7 @@
 <p>The select element defines a drop-down list:</p>
 
 <form action="/action_page.php">
-  <label for="shoes">Choose a car:</label>
+  <label for="shoes">Choose a color:</label>
   <select id="shoes" name="shoes" size="3" multiple="">
     <option value="red">red</option>
     <option value="blue">blue</option>
@@ -127,6 +127,15 @@
   <input type="submit" />
 </form>
 
+<form action="/action_page.php">
+  <label for="size">Choose a size:</label>
+  <select id="size" name="size" size="3" multiple="">
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L" selected="">L</option>
+  </select>
+  <input type="submit" />
+</form>
 </body>
 </html>
 
