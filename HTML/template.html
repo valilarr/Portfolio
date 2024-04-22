@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style the header */
+header {
+  background-color: #816de9;
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 600px; /* only for demonstration, should be removed */
+  background: #765d9d;
+  padding: 50px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #e48d8d;
+  padding: 10px;
+  text-align: center;
+  color: rgb(219, 31, 157);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <h2>SHOES by Valery</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="template.html">Store</a></li>
+      <li><a href="contact.html">About us</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Store</h1>
+    <p>We offer the best selectio on shoes</p>
+    <p>The best market prices!!!</p>
+    
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Size</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Red Shoes</td>
+          <td>S/M/L</td>
+          <td>$199</td>
+        </tr>
+        <tr>
+            <td>Blue Shoes</td>
+            <td>S/M/L</td>
+            <td>$199</td>
+        </tr>
+        <tr>
+            <td>Green Shoes</td>
+            <td>S/M/L</td>
+            <td>$199</td>
+        </tr>
+        <tr>
+            <td>Yellow Shoes</td>
+            <td>S/M/L</td>
+            <td>$199</td>
+        </tr>
+        <tr>
+            <td>Teal Shoes</td>
+            <td>S/M/L</td>
+            <td>$199</td>
+        </tr>
+        <tr>
+            <td>Black Shoes</td>
+            <td>S/M/L</td>
+            <td>$199</td>
+        </tr> 
+        <tr>
+            <td><img style="width: 100px; display: block; margin: 0 auto;" src="shoes1.jpg"></td>
+            <td><img style="width: 80px; display: block; margin: 0 auto;" src="shoes1.jpg"></td>
+            <td><img style="width: 65px; display: block; margin: 0 auto;" src="shoes1.jpg"></td>
+        </tr> 
+    </table>
+    <h1>Returns</h1>
+    <p>All returns are Welcome</p>
+    <p>                       </p>
+    <p>Check your receipt for restocking fees</p>
+  </article>
+
+</section>
+
+<footer>
+  <p>Valery Store</p>
+</footer>
+
+</body>
+</html>
+
