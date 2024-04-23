@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Style the menu button */
+.dropbtn {
+  background-color: #9baf4c;
+  color: rgb(232, 35, 35);
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 200px; /* Set button width to 200px */
+  text-align: left; /* Align text to the left */
+}
+ 
+/* Style the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block; /* Keep it inline-block */
+  width: 200px; /* Set container width to 200px */
+}
+ 
+/* Style the dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the submenu below the parent */
+  left: 0; /* Align submenu with parent */
+  background-color: #c13838;
+  width: 200px; /* Set submenu width to 200px */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+ 
+/* Adjust submenu position */
+.dropdown-content ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+ 
+/* Style the menu items */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+ 
+/* Change color of dropdown items on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+ 
+/* Display dropdown menu when hovering over dropdown container */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ 
+/* Style for bottom menu */
+.bottom-menu {
+  text-align: center;
+}
+ 
+.bottom-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+ 
+.bottom-menu > ul > li {
+  display: block;
+  margin: 0 0 10px; /* Adjust margin to create spacing between items */
+  position: relative; /* Add relative positioning to the parent li */
+  width: 200px; /* Set menu item width to 200px */
+}
+ 
+.bottom-menu > ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%; /* Adjust to make submenu pop to the right */
+  background-color: #c13838; /* Match the background color of dropdown */
+  width: 200px; /* Set submenu width to 200px */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+ 
+.bottom-menu > ul li:hover > ul {
+  display: block;
+}
+ 
+.bottom-menu a {
+  color: black; /* Match the color of dropdown items */
+  text-decoration: none;
+  display: block;
+  padding: 12px 16px;
+}
+ 
+.bottom-menu a:hover {
+  background-color: #f1f1f1; /* Change background color on hover */
+}
+</style>
+</head>
+<body>
+ 
+<h2>Vertical Dropdown Menu</h2>
+ 
+<!-- Menu Structure -->
+<div class="dropdown">
+  <button class="dropbtn">Home</button>
+</div>
+ 
+<div class="dropdown">
+  <button class="dropbtn">Products</button>
+  <div class="dropdown-content">
+    <a href="#">Shirts</a>
+    <a href="#">Shoes</a>
+    <a href="#">Pants</a>
+  </div>
+</div>
+ 
+<div class="dropdown">
+  <button class="dropbtn">About</button>
+</div>
+ 
+<!-- Bottom Menu Structure -->
+<div class="bottom-menu">
+    <button class="dropbtn">Shirts</button>
+ <div class="dropdown-content"></div> 
+    <a href="#">Products</a>
+      <div class="sub-menu"></div>
+        <a href="#">Shirts</a>
+        <a href="#">Shoes</a>
+        <a href="#">Pants</a>
+      </div>
+    <a href="#">About</a>
+  </div>
+ 
+</body>
+</html>
+ 
