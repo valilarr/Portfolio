@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+</head>
+<body>
+
+<h1>This is page #5</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni deleniti voluptatem magnam reprehenderit ducimus accusamus illum. At, repellendus! Rerum eius earum voluptate mollitia dicta! Possimus dolorum provident assumenda non quo!</p>
+
+<div class="pagination">
+  <a href="page4.html"><</a>
+  <a href="index.html">1</a>
+  <a href="page2.html">2</a>
+  <a href="page3.html">3</a>
+  <a href="page4.html">4</a>
+  <a href="page5.html" class="active">5</a>
+  <a href="page5.html">></a>
+
+</div>
+
+</body>
+</html>
